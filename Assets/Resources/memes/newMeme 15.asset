@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f994f0551b6462044afcf8ed22985a20, type: 3}
+  m_Name: newMeme 15
+  m_EditorClassIdentifier: 
+  affects: 2
+  ineffective: 29
+  sprite: {fileID: 21300000, guid: 7fe3ffc0b89d23043b4d3cecfb2c0edc, type: 3}
