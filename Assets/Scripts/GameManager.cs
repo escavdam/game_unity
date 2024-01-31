@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager2 : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject instruccionesPanel;
 
@@ -20,9 +20,9 @@ public class GameManager2 : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            ChangeScene("SampleScene");
+            ChangeScene("a");
         }
     }
 
