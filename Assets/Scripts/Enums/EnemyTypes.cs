@@ -1,7 +1,7 @@
 
 
 [System.Flags]
-public enum EnemyTypess
+public enum EnemyTypes
 {
 	None = 0,
 	Normie = 1 << 0,

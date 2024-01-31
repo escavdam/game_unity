@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "newMeme", menuName = "Dam/Meme")]
-public class Memes : ScriptableObject
+public class Meme : ScriptableObject
 {
 	[SerializeField] private EnemyTypes affects = EnemyTypes.None;
 	[SerializeField] private EnemyTypes ineffective = EnemyTypes.None;
