@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class pruebaCambioEscena : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +22,7 @@ public class pruebaCambioEscena : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //collision.gameObject.GetComponent<MovimientoJugador>().AplicarGolpeEnemigo(collision.GetContact(0).point);
-            SceneManager.LoadScene("Main");
+            collision.gameObject.GetComponent<MovimientoJugador>().AplicarGolpeEnemigo();
         }
     }
 }

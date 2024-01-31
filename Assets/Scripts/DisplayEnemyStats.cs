@@ -6,7 +6,7 @@ using TMPro;
 public class DisplayEnemyStats : MonoBehaviour
 {
     public TMP_Text statsText;  // Asigna el objeto Text desde el Inspector
-    public statsenemy enemyStats;  // Asigna la ScriptableObject desde el Inspector
+    public StatsEnemy enemyStats;  // Asigna la ScriptableObject desde el Inspector
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +17,14 @@ public class DisplayEnemyStats : MonoBehaviour
             statsText.text = "Nombre: " + enemyStats.Nombre + "\n" +
                              "Edad: " + enemyStats.Edad.ToString() + "\n" +
                              "Generacion: " + enemyStats.Generacion + "\n" +
-                             "Debilidades: " + enemyStats.Debilidades + "\n" +
-                             "Dislike: " + enemyStats.Dislike;
+                             "Weaknesses: ";
+
+            for (int i = 0; i < enemyStats.weaknesses.Count; i++)
+            {
+                statsText.text += enemyStats.weaknesses[i];
+                if (i != enemyStats.weaknesses.Count - 1)
+                    statsText.text += ", ";
+            }
         }
         else
         {

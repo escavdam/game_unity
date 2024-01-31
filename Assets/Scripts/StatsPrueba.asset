@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 415a74692019ddf49a4b08076257bb2d, type: 3}
-  m_Name: StatsNormie
+  m_Name: StatsPrueba
   m_EditorClassIdentifier: 
-  Nombre: 
-  Edad: 0
-  Generacion: 
-  Debilidades: 
-  Dislike: 
+  Nombre: Jose Miguel
+  Edad: 65
+  Generacion: Boomer
+  weaknesses: 0000000001000000

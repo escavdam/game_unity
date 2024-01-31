@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UI-battle.unity
     guid: 0afa23fb5c733fd42a698e13060c4422
+  - enabled: 1
+    path: Assets/Scenes/UI-battle-Completo.unity
+    guid: 37beabe3e088c654ab7d8166411e2657
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

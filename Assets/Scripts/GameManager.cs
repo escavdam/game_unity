@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            ChangeScene("a");
+            ChangeScene("Buffon-Habitacion");
         }
     }
 

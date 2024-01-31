@@ -7,14 +7,6 @@ public class MovimientoJugador : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float fuerzaGolpe;
-    [SerializeField] GameObject testPanel;
-    [SerializeField] GameObject testPanel1;
-    [SerializeField] GameObject testPanel2;
-    [SerializeField] GameObject testPanel3;
-    [SerializeField] GameObject testPanel4;
-    [SerializeField] GameObject testPanel5;
-    [SerializeField] GameObject testPanel6;
-    [SerializeField] GameObject testPanel7;
 
     bool puedeMoverse = true;
 
@@ -51,19 +43,6 @@ public class MovimientoJugador : MonoBehaviour
 
     void ProcesarMovimiento()
     {
-        /*
-        Vector3 movement = Vector3.zero;
-
-        if (Input.GetKey(KeyCode.W))
-            movement.y += 1;
-        if (Input.GetKey(KeyCode.D))
-            movement.x += 1;
-        if (Input.GetKey(KeyCode.S))
-            movement.y -= 1;
-        if (Input.GetKey(KeyCode.A))
-            movement.x -= 1;
-        */
-
         if (puedeMoverse == false)
             return;
 
@@ -96,19 +75,6 @@ public class MovimientoJugador : MonoBehaviour
 
 
         rb.velocity = movement.normalized * speed;
-
-
-        if (Input.GetKey(KeyCode.F))
-        {
-            testPanel.SetActive(false);
-            testPanel1.SetActive(false);
-            testPanel2.SetActive(false);
-            testPanel3.SetActive(false);
-            testPanel4.SetActive(false);
-            testPanel5.SetActive(false);
-            testPanel6.SetActive(false);
-            testPanel7.SetActive(false);
-        }
 
         /*
         isMoving = movement != Vector2.zero;
