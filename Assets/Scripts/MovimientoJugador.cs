@@ -78,29 +78,25 @@ public class MovimientoJugador : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
             movement.x -= 1;
 
-        if (movement.x != 0f)
-        {
-            animator.SetBool("isRunning", true);
-        }
-        else
-        {
-            animator.SetBool("isRunning", false);
-        }
-
         if (Input.GetKey(KeyCode.W))
-        {
             movement.y += 1;
-            animator.SetBool("isBackRunning", true);
-        }
 
         if (Input.GetKey(KeyCode.S))
-        {
             movement.y -= 1;
-            animator.SetBool("isFrontRunning", true);
-        }
 
-        rb.velocity = new Vector3(movement.y * speed, rb.velocity.y);
-        rb.velocity = new Vector3(movement.x * speed, rb.velocity.x);
+
+        if (movement.x != 0f)
+            animator.SetTrigger("isRunningHorizontal");
+        else if (movement.y > 0)
+            animator.SetTrigger("NowFacingUpwards");
+        else if (movement.y < 0)
+            animator.SetTrigger("NowFacingDownwards");
+        else
+            animator.SetTrigger("StoppedMoving");
+
+
+        rb.velocity = movement.normalized * speed;
+
 
         if (Input.GetKey(KeyCode.F))
         {
@@ -114,7 +110,7 @@ public class MovimientoJugador : MonoBehaviour
             testPanel7.SetActive(false);
         }
 
-
+        /*
         isMoving = movement != Vector2.zero;
         if (wasMoving && !isMoving)
         {
@@ -145,7 +141,7 @@ public class MovimientoJugador : MonoBehaviour
         if (!wasWalkSide && isWalkSide)
         {
             animator.SetTrigger("isRunningHorizontal");
-        }
+        }*/
 
         if (lookRight == true && movement.x < 0 || lookRight == false && movement.x > 0)
         {
