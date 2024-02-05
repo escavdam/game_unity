@@ -25,6 +25,7 @@ public class BattleController : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			UpdateMemes();
+			print("Me electrocutaste pedrito");
 		}
 	}
 
@@ -73,5 +74,6 @@ public class BattleController : MonoBehaviour
     void HandleEnemyClick(EnemyTypes enemyType)
     {
         Debug.Log("Clicked on enemy type: " + enemyType);
+        print("Me electrocutaste pedrito");
     }
 }
