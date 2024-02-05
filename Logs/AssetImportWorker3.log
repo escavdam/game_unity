@@ -270,3 +270,188 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  1.058 seconds
+Refreshing native plugins compatible for Editor in 6.54 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.329 seconds
+Domain Reload Profiling: 4381ms
+	BeginReloadAssembly (268ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (678ms)
+		LoadAssemblies (481ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (336ms)
+			TypeCache.Refresh (329ms)
+				TypeCache.ScanAssembly (312ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (3331ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1535ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (180ms)
+			ProcessInitializeOnLoadAttributes (1261ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 12.34 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4284 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 36 unused Assets / (92.4 KB). Loaded Objects now: 4877.
+Memory consumption went from 149.8 MB to 149.7 MB.
+Total: 9.764200 ms (FindLiveObjects: 0.435100 ms CreateObjectMapping: 0.347500 ms MarkObjects: 8.821700 ms  DeleteObjects: 0.158000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 265781.455244 seconds.
+  path: Assets/Resources/memes/meme2.asset
+  artifactKey: Guid(29d642e82e7aac143a938f6217c32745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/memes/meme2.asset using Guid(29d642e82e7aac143a938f6217c32745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7811eb17879e2a1f63d3bd0bb56eda0') in 0.023706 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Resources/memes/newMeme.asset
+  artifactKey: Guid(301f49718d914324288673b8d1a7b16f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/memes/newMeme.asset using Guid(301f49718d914324288673b8d1a7b16f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aff139c19b392da7120b234c8581615a') in 0.002410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Resources/memes/newMeme 5.asset
+  artifactKey: Guid(fbcb28a8f57ebc341aa12e30b536e440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/memes/newMeme 5.asset using Guid(fbcb28a8f57ebc341aa12e30b536e440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b07d0b7f6c0e738033312fde502bad05') in 0.002165 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Resources/memes/newMeme 7.asset
+  artifactKey: Guid(f8f0d4aa7cb0a4841a9d24d60ec104ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/memes/newMeme 7.asset using Guid(f8f0d4aa7cb0a4841a9d24d60ec104ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531096f2d23f12aab04c581109b3b90b') in 0.002654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Resources/memes/newMeme 4.asset
+  artifactKey: Guid(f902e93ba38a6d34cba11853f89a4e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/memes/newMeme 4.asset using Guid(f902e93ba38a6d34cba11853f89a4e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ce9dc412b0805661fe45fa505c067c') in 0.002060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.011583 seconds.
+  path: Assets/Resources/memes/newMeme 1.asset
+  artifactKey: Guid(73d869c086e9ddc40b99941ce3162053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/memes/newMeme 1.asset using Guid(73d869c086e9ddc40b99941ce3162053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb212cc9426976bff33f2a66573c5d3') in 0.002786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Resources/memes/newMeme 12.asset
+  artifactKey: Guid(c329f6dfcf3718e4984b932adf889634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/memes/newMeme 12.asset using Guid(c329f6dfcf3718e4984b932adf889634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b00fc1c9d84cd589184fb378d3d42acb') in 0.002828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.009716 seconds.
+  path: Assets/Resources/memes/newMeme 16.asset
+  artifactKey: Guid(8acf0f1edcd3dc841b8a248e285eb727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/memes/newMeme 16.asset using Guid(8acf0f1edcd3dc841b8a248e285eb727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '860347e04d8985b8d2d35dd0ad9dc43e') in 0.002485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/memes/newMeme 17.asset
+  artifactKey: Guid(03e03465716fff641b09a394afefd350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/memes/newMeme 17.asset using Guid(03e03465716fff641b09a394afefd350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e873b8287ed70b256117a99342861d4') in 0.002724 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Resources/memes/newMeme 14.asset
+  artifactKey: Guid(191b6a8bc356e0740a4791b0832ddd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/memes/newMeme 14.asset using Guid(191b6a8bc356e0740a4791b0832ddd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f53f9a79a1f5ce576f4c94688c56bfb') in 0.002029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Resources/memes/newMeme 6.asset
+  artifactKey: Guid(29bfa83399cab154ba72f6e9b8e6fa27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/memes/newMeme 6.asset using Guid(29bfa83399cab154ba72f6e9b8e6fa27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aaefc4c1d23891b827a8e4ab7f53064') in 0.001834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 8.920923 seconds.
+  path: Assets/Sprites/bufon-ggj-frontwalke.aseprite
+  artifactKey: Guid(0e823e63bbf27f74ebb07fe357b496c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/bufon-ggj-frontwalke.aseprite using Guid(0e823e63bbf27f74ebb07fe357b496c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebbbfbeafdd6dd0de7489029e87dba27') in 0.207439 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Sprite-bocadillo.png
+  artifactKey: Guid(d88c479ddf5bd8a4faf23ca20d3ab744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sprite-bocadillo.png using Guid(d88c479ddf5bd8a4faf23ca20d3ab744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3b70ead4b31b05816af408e338eb6e') in 0.016982 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
