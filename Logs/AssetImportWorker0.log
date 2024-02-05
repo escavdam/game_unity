@@ -311,3 +311,11 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 845.964492 seconds.
+  path: Assets/Scripts/StatsPrueba.asset
+  artifactKey: Guid(b6de8ea4dae820e4eaec2163a881d82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/StatsPrueba.asset using Guid(b6de8ea4dae820e4eaec2163a881d82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ab3f1506bc4b09d2d1e70e458bf782') in 0.038774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
