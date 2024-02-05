@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 3.1020474}
+  m_AnchoredPosition: {x: 0, y: 3.1020303}
   m_SizeDelta: {x: 0, y: 707.85}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &145576552
@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f820e0d4d2b0ac44a89aa27977fbb4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meme: {fileID: 0}
+  meme: {fileID: 11400000, guid: a8bc606f94b5ae84698e67c4460aeeaf, type: 2}
 --- !u!1 &318113159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2861,7 +2861,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 336935268}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9956176
+  m_Size: 0.9634629
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

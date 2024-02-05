@@ -10,8 +10,8 @@ public class BattleController : MonoBehaviour
 
 	private Meme[] memes = new Meme[2];
 
-	private readonly List<Meme> availableMemes = new();
-	private readonly Queue<Meme> usedMemes = new();
+	private readonly List<Meme> availableMemes = new List<Meme>();
+	private readonly Queue<Meme> usedMemes = new Queue<Meme>();
 
 	private void Start()
 	{
