@@ -33,7 +33,7 @@ public class Timers : MonoBehaviour
     void UpdateTiempoIndicator()
     {
         // Calcula la escala en base al tiempo restante y el tiempo máximo
-        float escala = Mathf.Clamp(tiempoRestante / tiempoMaximo, 0f, 1f);
+        float escala = Mathf.Clamp(tiempoRestante, 0f, 1f);
 
         // Aplica la escala suavizada a la imagen
         tiempoIndicator.rectTransform.localScale = new Vector3(escala, 1f, 1f);
@@ -44,7 +44,7 @@ public class Timers : MonoBehaviour
         while (tiempoRestante > 0)
         {
             // Actualiza el tiempo restante
-            tiempoRestante -= Time.deltaTime;
+            tiempoRestante -= Time.time;
 
             // Actualiza el indicador de tiempo
             UpdateTiempoIndicator();

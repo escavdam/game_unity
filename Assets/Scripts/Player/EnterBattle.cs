@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class EnterBattle : MonoBehaviour
 {
     public StatsEnemy enemy;
+    [SerializeField] GameObject battlePanel;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,8 @@ public class EnterBattle : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"));
         {
             //collision.gameObject.GetComponent<MovimientoJugador>().AplicarGolpeEnemigo();
-            SceneManager.LoadScene("UI-battle-Completo");
+            //SceneManager.LoadScene("UI-battle-Completo");
+            battlePanel.SetActive(true);
         }
     }
 }
