@@ -12,7 +12,8 @@ public class NewTimer : MonoBehaviour
 
     [SerializeField] GameObject panelDeTiempo;
 
-
+    bool isTimerRunning = false;
+    //bool wasAttacked = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,11 +21,23 @@ public class NewTimer : MonoBehaviour
 
     }
 
+    public void StartTimer()
+    {
+        isTimerRunning = true;
+    }
+
     public void Tiempo()
     {
         currentTime -= Time.deltaTime * velocity;
-        Mathf.Clamp(currentTime, tiempoMinimo, tiempoMaximo);
 
+        if (currentTime <= tiempoMinimo)
+        {
+            currentTime = 0;
+            isTimerRunning = false;
+            print("Se acabo el tiempo");
+        }
+
+        currentTime = Mathf.Clamp(currentTime, tiempoMinimo, tiempoMaximo);
         UpdateTimeDisplay();
     }
 
@@ -33,10 +46,32 @@ public class NewTimer : MonoBehaviour
         panelDeTiempo.GetComponentInChildren<Image>().fillAmount = currentTime;
     }
 
+    //Funcion para que cuando pulses el meme adecuado sume más risa al risómetro
+    /*
+    public void StartAttack()
+    {
+        wasAttacked = true;
+    }
+
+    void UpTimeInAttack()
+    {
+        currentTime += 0.2f;
+    }
+    */
 
     // Update is called once per frame
     void Update()
     {
-        Tiempo();
+        if (isTimerRunning)
+        {
+            Tiempo();
+        }
+
+        /*
+        if (wasAttacked)
+        {
+            UpTimeInAttack();
+        }
+        */
     }
 }
