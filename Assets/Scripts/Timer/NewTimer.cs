@@ -62,4 +62,11 @@ public class NewTimer : MonoBehaviour
             UpdateTimeDisplay();
         }
     }
+
+    /*
+    void WhenYouPressMemeXTimeTheTimeWillBeFaster()
+    {
+
+    }
+    */
 }
