@@ -31,8 +31,10 @@ public class NewTimer : MonoBehaviour
         if (currentTime <= 0)
         {
             currentTime = 0;
-            isTimerRunning = false;
+            //isTimerRunning = false;
             print("Se acabo el tiempo");
+            GameEvents.HurtPlayer.Invoke();
+            RestartTimer();
         }
     }
 
