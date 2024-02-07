@@ -5,15 +5,12 @@ using UnityEngine.UI;
 
 public class NewTimer : MonoBehaviour
 {
-    [SerializeField] float currentTime;
-    [SerializeField] float velocity;
-    [SerializeField] float tiempoMaximo = 1;
-    [SerializeField] int tiempoMinimo = 0;
+    [SerializeField] float answerTime;
+    float currentTime;
 
     [SerializeField] GameObject panelDeTiempo;
 
     bool isTimerRunning = false;
-    //bool wasAttacked = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,54 +21,45 @@ public class NewTimer : MonoBehaviour
     public void StartTimer()
     {
         isTimerRunning = true;
+        RestartTimer();
     }
 
-    public void Tiempo()
+    void CountDown()
     {
-        currentTime -= Time.deltaTime * velocity;
+        currentTime -= Time.deltaTime;
 
-        if (currentTime <= tiempoMinimo)
+        if (currentTime <= 0)
         {
             currentTime = 0;
-            isTimerRunning = false;
+            //isTimerRunning = false;
             print("Se acabo el tiempo");
+            GameEvents.HurtPlayer.Invoke();
+            RestartTimer();
         }
-
-        currentTime = Mathf.Clamp(currentTime, tiempoMinimo, tiempoMaximo);
-        UpdateTimeDisplay();
     }
 
     void UpdateTimeDisplay()
     {
-        panelDeTiempo.GetComponentInChildren<Image>().fillAmount = currentTime;
+        panelDeTiempo.GetComponentInChildren<Image>().fillAmount = currentTime / answerTime;
     }
 
-    //Funcion para que cuando pulses el meme adecuado sume más risa al risómetro
-    /*
-    public void StartAttack()
+    public void TimerRestart()
     {
-        wasAttacked = true;
+        RestartTimer();
     }
 
-    void UpTimeInAttack()
+    void RestartTimer()
     {
-        currentTime += 0.2f;
+        currentTime = answerTime;
     }
-    */
 
     // Update is called once per frame
     void Update()
     {
         if (isTimerRunning)
         {
-            Tiempo();
+            CountDown();
+            UpdateTimeDisplay();
         }
-
-        /*
-        if (wasAttacked)
-        {
-            UpTimeInAttack();
-        }
-        */
     }
 }
