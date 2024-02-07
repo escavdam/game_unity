@@ -2311,8 +2311,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiempoMaximo: 30
+  tiempoRestante: 20
   gameOver: 0
   tiempoIndicator: {fileID: 1951965811}
+  timerStarted: 0
 --- !u!1 &1337898302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3542,9 +3544,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1957858905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7036377b425a24a9096fcb75d144c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 65b6840a0e7e36742bd9bca282df080a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RisometroEnemigo: {fileID: 1957858905}
 --- !u!114 &1957858908
 MonoBehaviour:
   m_ObjectHideFlags: 0
