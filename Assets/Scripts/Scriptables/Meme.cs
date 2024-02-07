@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "newMeme", menuName = "Dam/Meme")]
+[CreateAssetMenu(fileName = "newMeme", menuName = "Meme")]
 public class Meme : ScriptableObject
 {
 	//[SerializeField] private EnemyTypes affects = EnemyTypes.None;

@@ -3,13 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
+
 public class DisplayEnemyStats : MonoBehaviour
 {
     public TMP_Text statsText;  // Asigna el objeto Text desde el Inspector
-    public StatsEnemy enemyStats;  // Asigna la ScriptableObject desde el Inspector
 
-    // Start is called before the first frame update
-    void Start()
+     void Start()
+    {
+        GameEvents.StartCombat.AddListener(EnemyInfo);   
+    }
+
+   
+
+    void EnemyInfo(StatsEnemy enemyStats)
     {
         if (enemyStats != null)
         {
@@ -38,3 +45,7 @@ public class DisplayEnemyStats : MonoBehaviour
         
     }
 }
+
+
+//crear un game events que almacene la info del enemigo 
+//que se comunique battle controller 

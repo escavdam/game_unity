@@ -6,5 +6,8 @@ public enum MemeType
 {
     Cats,
     Boomer,
-    Nerd
+    Nerd,
+    dank,
+    normies,
+    genz
 }

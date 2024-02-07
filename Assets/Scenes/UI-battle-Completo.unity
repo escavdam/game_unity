@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 3.1020303}
+  m_AnchoredPosition: {x: 0, y: 3.102027}
   m_SizeDelta: {x: 0, y: 707.85}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &145576552
@@ -220,7 +220,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.1024998, y: 1.0625, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 672111278}
   m_Father: {fileID: 1046562013}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -774,7 +775,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statsText: {fileID: 1303498035}
-  enemyStats: {fileID: 11400000, guid: b6de8ea4dae820e4eaec2163a881d82c, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,6 +1058,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &672111277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 672111278}
+  - component: {fileID: 672111280}
+  - component: {fileID: 672111279}
+  m_Layer: 0
+  m_Name: Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &672111278
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672111277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 272978557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 100, y: -66}
+  m_SizeDelta: {x: -1426.4921, y: -654.7017}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &672111279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672111277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7fe3ffc0b89d23043b4d3cecfb2c0edc, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &672111280
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672111277}
+  m_CullTransparentMesh: 1
 --- !u!1 &722132092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,7 +2735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f820e0d4d2b0ac44a89aa27977fbb4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meme: {fileID: 0}
+  meme: {fileID: 11400000, guid: a8bc606f94b5ae84698e67c4460aeeaf, type: 2}
 --- !u!1 &1635178763
 GameObject:
   m_ObjectHideFlags: 0
@@ -2861,7 +2936,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 336935268}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9634629
+  m_Size: 0.9956176
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2910,9 +2985,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29f014105768ebf49914a20f13c067b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meme1: {fileID: 296197174}
-  meme2: {fileID: 1937489449}
-  meme3: {fileID: 1603047201}
 --- !u!1 &1848772923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,7 +3313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f820e0d4d2b0ac44a89aa27977fbb4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meme: {fileID: 0}
+  meme: {fileID: 11400000, guid: a8bc606f94b5ae84698e67c4460aeeaf, type: 2}
 --- !u!1 &1951965809
 GameObject:
   m_ObjectHideFlags: 0
