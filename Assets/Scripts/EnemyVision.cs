@@ -7,7 +7,7 @@ public class EnemyVision : MonoBehaviour
 {
     public StatsEnemy enemy;
 
-    // Start is called before the first frame update
+   
     void Start()
     {
         //GameEvents.StartCombat.AddListener(EnemyInfo);
@@ -15,7 +15,6 @@ public class EnemyVision : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         

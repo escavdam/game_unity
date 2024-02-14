@@ -39,7 +39,6 @@ public class DisplayEnemyStats : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -47,5 +46,3 @@ public class DisplayEnemyStats : MonoBehaviour
 }
 
 
-//crear un game events que almacene la info del enemigo 
-//que se comunique battle controller 

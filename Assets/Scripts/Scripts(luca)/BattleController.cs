@@ -14,6 +14,11 @@ public class BattleController : MonoBehaviour
        
     }
 
+    void Update()
+    {
+        MemeChosen();    
+    }
+
     void BattleStart(StatsEnemy enemy)
     {
         this.enemy = enemy;

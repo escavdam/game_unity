@@ -10,5 +10,6 @@ public class GameEvents
 
     public static MemeEvent MemeChosen = new MemeEvent();
     public static EnemyEvent StartCombat = new EnemyEvent();
+    public static GameEvents CombatController = new GameEvents();
 
 }
